@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: dir yanaginagi39/TestGithubActions
+    - run: dir ./
     - uses: actions/checkout@v2
       with: 
         persist-credentials: false
