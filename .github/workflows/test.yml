@@ -11,9 +11,9 @@ jobs:
         persist-credentials: false
     - uses: actions/setup-node@v2
       with:
-        working-directory: workflows
         node-version: 16.x
         cache: npm
         cache-dependency-path: './package-lock.json'
     - run: npm ci
+      working-directory: workflows
     - run: npm test
