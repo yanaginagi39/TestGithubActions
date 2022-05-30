@@ -14,6 +14,6 @@ jobs:
       with:
         node-version: 16.x
         cache: npm
-        cache-dependency-path: yanaginagi39/TestGithubActions/.github/workflows/package-lock.json
+        cache-dependency-path: 'workflows/package-lock.json'
     - run: npm ci
     - run: npm test
