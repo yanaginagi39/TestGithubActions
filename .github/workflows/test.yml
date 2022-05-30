@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: dir ../../../../../../../home/runner/runnners
+    - run: dir ../../../../../../../home/runner/runners
     - uses: actions/checkout@v2
       with: 
         persist-credentials: false
