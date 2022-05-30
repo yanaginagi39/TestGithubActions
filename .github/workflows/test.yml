@@ -2,12 +2,11 @@ name: TDD JS Sample CI
 
 on: [push]
 
-pwd
-
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    - run: pwd
     - uses: actions/checkout@v2
       with: 
         persist-credentials: false
