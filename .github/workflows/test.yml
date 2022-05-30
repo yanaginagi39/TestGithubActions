@@ -12,6 +12,6 @@ jobs:
       with:
         node-version: 16.x
         cache: 'npm'
-        cache-dependency-path: ./frontend/yarn.lock
+        cache-dependency-path: ./package-lock.json
     - run: npm ci
     - run: npm test
