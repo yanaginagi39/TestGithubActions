@@ -6,14 +6,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: find package-lock.json
     - uses: actions/checkout@v2
       with: 
         persist-credentials: false
     - uses: actions/setup-node@v2
       with:
+        working-directory: workflows
         node-version: 16.x
         cache: npm
-        cache-dependency-path: './.github/workflows/package-lock.json'
+        cache-dependency-path: './package-lock.json'
     - run: npm ci
     - run: npm test
