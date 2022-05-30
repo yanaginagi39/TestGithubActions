@@ -5,7 +5,7 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+      pwd
     steps:
     - uses: actions/checkout@v2
       with: 
