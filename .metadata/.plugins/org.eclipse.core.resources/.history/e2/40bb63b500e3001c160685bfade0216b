@@ -1,0 +1,14 @@
+package tutorial;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.*;
+import static org.hamcrest.CoreMatchers.*;
+
+class Color1Test {
+
+	@Test
+	void testGetColor() {
+		fail("まだ実装されていません");
+	}
+
+}
